@@ -34,24 +34,48 @@
 
   <div class="row mb-2">
       <div class="col-md mb-4">
-        <div class="shadow p-3">
+        <div class="card shadow p-3">
           One of three columns
         </div>
       </div>
       <div class="col-md mb-4">
-        <div class="shadow p-3">
+        <div class="card shadow p-3">
           One of three columns
         </div>
       </div>
       <div class="col-md mb-4">
-        <div class="shadow p-3">
+        <div class="card shadow p-3">
           One of three columns
         </div>
       </div>
     </div>
   </div>
 
-  <div id="container" class="shadow p-3 mb-5 bg-white rounded"></div>
+  <div class="card shadow rounded">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-sm-5">
+        <h4 class="card-title mb-0">Traffic</h4>
+        <div class="small text-muted">September 2019</div>
+        </div>
+
+        <div class="col-sm-7 d-none d-md-block">
+          <div class="btn-group btn-group-toggle float-right mr-3" data-toggle="buttons">
+          <label class="btn btn-outline-secondary active">
+          <input id="option1" type="radio" name="options" autocomplete="off"> Day
+          </label>
+          <label class="btn btn-outline-secondary">
+          <input id="option2" type="radio" name="options" autocomplete="off" checked=""> Month
+          </label>
+          <label class="btn btn-outline-secondary">
+          <input id="option3" type="radio" name="options" autocomplete="off"> Year
+          </label>
+          </div>
+        </div>
+      </div>
+      <div id="container" class="p-3"></div>
+    </div>
+  </div>
 </main>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
