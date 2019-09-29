@@ -1,7 +1,17 @@
 $(document).ready(function() {
+
+  $.ajax({
+    url:'http://itrash.cloud/json/weight_day_json.php',
+    type:'POST',
+    data:{}
+  }).done(function(data){
+    console.log(data);
+  }).fail(function() {
+    console.log("error");
+  });
+
   graph_write();
 });
-
 
 function graph_write (){
   var chart = new Highcharts.Chart({
