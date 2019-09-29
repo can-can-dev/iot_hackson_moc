@@ -1,4 +1,9 @@
 $(document).ready(function() {
+  graph_write();
+});
+
+
+function graph_write (){
   var chart = new Highcharts.Chart({
     chart: {
         renderTo: 'container'
@@ -12,5 +17,5 @@ $(document).ready(function() {
         pointStart: Date.UTC(2012, 0, 1),
         pointInterval: 24 * 3600 * 1000,
     }]
-});
-});
+  });
+}
